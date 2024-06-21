@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects of Air Pollution</title>
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+            padding: 20px; 
+            border-radius: 8px;
+            
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    
+        p {
+            margin-bottom: 20px;
+        }
+        .effect {
+            background-color: #f2f2f2; 
+            padding: 20px;
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+        }
+        .effect img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px; 
+        }
+        .effect:nth-child(even) {
+            flex-direction: row-reverse; 
+        }
+        .effect:nth-child(odd) {
+            flex-direction: row; 
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(249, 249, 249, 0.9); 
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0; 
+            text-align: center;
+            z-index: 1000; 
+            height: 140px; 
+            box-sizing: border-box; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            color: #5be6ff; 
+            font-family: 'Times New Roman', sans-serif; 
+            font-style: italic;
+            font-variant: small-caps;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        .effect:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AirVantage</h1>
+        <nav>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="map.html">Map</a>
+            <a class="nav-link" href="cause.html">Causes</a>
+            <a class="nav-link" href="effect.html">Effects</a>
+            <a class="nav-link" href="solution.html">Methods</a>
+        </nav>
+    </header>
+    <video id="video-background" autoplay loop muted>
+        <source src="5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Effects of Air Pollution</h1>
+
+        <div class="effect">
+            <img src="lungs.png" alt="Health Effects">
+            <div class="effect-content">
+                <h2>Health Effects</h2>
+                <p>Air pollution contributes to respiratory and cardiovascular diseases, such as asthma, bronchitis, and lung cancer. Fine particulate matter (PM2.5) and other pollutants can penetrate deep into the lungs, causing inflammation and aggravating existing health conditions.</p>
+            </div>
+        </div>
+
+        <div class="effect">
+            <img src="sick.png" alt="Environmental Impact">
+            <div class="effect-content">
+                <h2>Environmental Impact</h2>
+                <p>Pollutants like sulfur dioxide (SO2), nitrogen dioxide (NO2), and ozone (O3) contribute to acid rain and smog formation. This can harm vegetation, soil quality, and aquatic ecosystems.</p>
+            </div>
+        </div>
+
+        <div class="effect">
+            <img src="economics.png" alt="Economic Costs">
+            <div class="effect-content">
+                <h2>Economic Costs</h2>
+                <p>Air pollution leads to increased healthcare costs due to higher incidences of respiratory illnesses and other health issues. It can also affect tourism and outdoor recreational activities when air quality is poor.</p>
+            </div>
+        </div>
+
+        <div class="effect">
+            <img src="climate-change.png" alt="Climate Change">
+            <div class="effect-content">
+                <h2>Climate Change</h2>
+                <p>Some air pollutants, like black carbon and methane, contribute to global warming and climate change. This can have far-reaching effects on weather patterns, sea levels, and ecosystem stability.</p>
+            </div>
+        </div>
+
+        <div class="effect">
+            <img src="population.png" alt="Social Impacts">
+            <div class="effect-content">
+                <h2>Social Impacts</h2>
+                <p>Vulnerable populations, such as children, the elderly, and those with pre-existing health conditions, are particularly susceptible to the health effects of air pollution. Reduced productivity and missed workdays due to illness also impact communities and economies.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causes of Air Pollution</title>
+    <style>
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: transparent;
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        .cause:hover{
+            background-color: rgba(255, 255, 255, 0.5); 
+        }
+
+        .cause {
+            background-color: #f2f2f2; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            overflow: hidden; 
+            display: flex;
+            align-items: center;
+        }
+        .cause img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px; 
+        }
+        .cause:nth-child(even) {
+            flex-direction: row-reverse; 
+        }
+        .cause:nth-child(odd) {
+            flex-direction: row; 
+        }
+        .cause-content {
+            flex: 1; 
+        }
+       
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(249, 249, 249, 0.9); 
+            color: #333;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 0; 
+            text-align: center;
+            z-index: 1000; 
+            height: 140px; 
+            box-sizing: border-box; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; 
+            gap: 20px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header h1 {
+            color: #5be6ff; 
+            font-family: 'Times New Roman', sans-serif; 
+            font-style: italic;
+            font-variant: small-caps;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <video id="video-background" autoplay loop muted>
+        <source src="cause.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h1>AirVantage</h1>
+        <nav>
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="map.html">Map</a>
+            <a class="nav-link" href="cause.html">Causes</a>
+            <a class="nav-link" href="effect.html">Effects</a>
+            <a class="nav-link" href="solution.html">Methods</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Causes of Air Pollution</h1>
+
+        <div class="cause">
+            <img src="air-pollution (2).png" alt="Factory">
+            <div class="cause-content">
+                <h2>Industrial Emissions</h2>
+                <p>Emissions from factories, power plants, and industrial processes release pollutants such as particulate matter (PM), sulphur dioxide (SO2), nitrogen oxides (NOx), and volatile organic compounds (VOCs).</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="air-pollution (1).png" alt="Transportation">
+            <div class="cause-content">
+                <h2>Transportation</h2>
+                <p>Vehicles, particularly those using diesel fuel, emit pollutants such as nitrogen dioxide (NO2), carbon monoxide (CO), and PM. Traffic congestion can exacerbate these emissions.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="fire.png" alt="Biomass Burning">
+            <div class="cause-content">
+                <h2>Biomass Burning</h2>
+                <p>Agricultural practices such as slash-and-burn farming, forest fires, and burning of crop residues release large amounts of smoke, PM, and pollutants like carbon monoxide and VOCs.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="construction-site.png" alt="Urbanization and Construction">
+            <div class="cause-content">
+                <h2>Urbanization and Construction</h2>
+                <p>Rapid urban development can lead to increased dust and particulate matter due to construction activities and road dust.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="fossil-fuel.png" alt="Energy Production">
+            <div class="cause-content">
+                <h2>Energy Production</h2>
+                <p>Burning of fossil fuels for electricity and heating contributes to emissions of sulfur dioxide, nitrogen oxides, and particulate matter.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
